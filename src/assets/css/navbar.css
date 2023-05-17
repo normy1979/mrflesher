@@ -1,0 +1,88 @@
+.sidenav {
+  height: 100%; 
+  position: fixed;
+  z-index: 1;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  /* color: #f1f1f1; */
+  color: rgba(7, 169, 239, 0.4);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  visibility: hidden;
+  background-color: #080000;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.nav-btn {
+  float: left;
+  color: white;
+  margin-top: 5px;
+  border: none;
+  background-color: black;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}

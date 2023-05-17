@@ -1,0 +1,48 @@
+.parallax {
+    /* The image used */
+    background-image: url("../images/starry_night.png");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-div {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 60px;
+  }
+
+  .bg-text {
+    color:rgb(3, 9, 82);
+    background-color:rgba(228, 235, 238, 0.4);
+  }
+  
+  .move {
+    margin: 2em;
+    width: 150px;
+    height: 100px;
+    border-radius: .5em;
+    transition-property: translate();
+    transition-duration: 3s;
+  }
+  
+  #ease {	
+    transition-timing-function: ease;	
+  }
+  
+  .move:hover {
+    transform: translate(400px, 400px);
+  }
+
+  .scroll_text {
+    height: 1000px; 
+    background-color:rgba(228, 235, 238, 0.968);
+    font-size: 26px;
+  }

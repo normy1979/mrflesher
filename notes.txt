@@ -1,0 +1,12 @@
+# TODO:
+ 
+ 1. Add other section
+ 2. Link to Email, LinkedIn
+ 3. Create CoderRank widgets and add 
+ 4. Udemy course / try transitions on site
+ 5. Rework css after course
+ 6. Take P5.js course
+
+ GOAL: Use CSS to show guy opening coat on both 
+    sides to see skills i.e. CSS, HTML, Python, etc.
+
