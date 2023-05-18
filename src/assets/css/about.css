@@ -1,3 +1,7 @@
 .about-div {
     text-align: center;
+    padding: 10%;
+}
+dl {
+    color: blue;
 }

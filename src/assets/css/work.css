@@ -1,0 +1,12 @@
+.work-div {
+    text-align: center;
+}
+
+.work-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

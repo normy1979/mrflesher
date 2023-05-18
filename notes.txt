@@ -1,11 +1,14 @@
 # TODO:
  
- 1. Add other section
- 2. Link to Email, LinkedIn
- 3. Create CoderRank widgets and add 
- 4. Udemy course / try transitions on site
- 5. Rework css after course
- 6. Take P5.js course
+ 1. Add other sections
+ 2. Add LinkedIn, Github link
+ 3. Create email function on Azure
+ 4. Link to Email
+ 5. Push live on Azure
+ 6. Udemy course / try transitions on site
+ 7. Rework css after course
+ 8. Create CoderRank widgets and add
+ 9. Take P5.js course 
 
  GOAL: Use CSS to show guy opening coat on both 
     sides to see skills i.e. CSS, HTML, Python, etc.

@@ -1,6 +1,7 @@
 import '../assets/css/home.css'
-import Navbar from './Navbar';
+import Navbar from './Navbar'
 import About from './About'
+import Work from './Work'
 
 export default function Home() {
     return ( 
@@ -15,6 +16,7 @@ export default function Home() {
     </div>
 
     <About/>
+    <Work/>
     
     </>
     );
