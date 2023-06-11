@@ -3,19 +3,21 @@ import '../assets/css/work.css'
 export default function Work() {
     return ( 
     <>
-    <div class="work-div" id="work">
-        <h3>MY WEB APP WORK</h3>
+    <div className="work-div" id="work">
+        <h3>MY WORK</h3>
         <div>
-            <h5><em><a href="https://thekraziestkatlady.com">thekraziestkatlady.com</a> (A NJ Non-profit Cat Rescue)</em></h5>
-            <img class="work-img" src={require('../assets/images/kkl_logo.png')} alt="kkl"/>
+            <h5><em><a href="https://thekraziestkatlady.com">thekraziestkatlady.com</a><p> (A NJ Non-profit Cat Rescue)</p></em></h5>
+            <a href="https://thekraziestkatlady.com"><img className="work-img" src={require('../assets/images/kkl_logo.png')} alt="kkl"/></a>
         </div>
         <div>
-            <h5><em><a href="https://mrflesher.com">mrflesher.com</a> (this site)</em></h5>
-            <img class="work-img" src={require('../assets/images/blue_honu.png')} alt="honu"/>
+            <h5><em><a href="https://mrflesher.com">mrflesher.com</a> <p>(this site)</p></em></h5>
+            <a href="https://mrflesher.com"><img className="work-img" src={require('../assets/images/blue_honu.png')} alt="honu"/></a>
         </div>           
         <div>
-            <h5><em><a href="http://actunaclub.com">actunaclub.com</a> (An informational site for our former AirBnB)</em></h5>
-            <img class="work-img" src={require('../assets/images/tc_logo.png')} alt="tuna club"/>
+            <h5><em><a href="http://actunaclub.com">actunaclub.com</a>
+            <p>(An informational site about our former short term rental property)</p>
+            </em></h5>
+            <a href="http://actunaclub.com"><img className="work-img" src={require('../assets/images/tc_logo.png')} alt="tuna club"/></a>
         </div>
     </div>
     </>

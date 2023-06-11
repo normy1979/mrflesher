@@ -7,20 +7,20 @@ export default function Navbar() {
 
     return ( 
     <>
-    <div id="myTopnav" class="navbar" onScroll={showtopnav}>
-        <button class="nav-btn" onClick={open}>&#9776;</button>
+    <div id="myTopnav" className="navbar" onScroll={showtopnav}>
+        <button className="nav-btn" onClick={open}>&#9776;</button>
         <a href="#abt" onClick={close}>About</a>
-        <a href="#work" onClick={close}>Work</a>
-        <a href="{{#}}" onClick={close}>R&eacute;sum&eacute;</a>
-        <a href="{{#}}" onClick={close}>Email</a>
+        <a href="#work" onClick={close}>MyWork</a>
+        {/* <a href="{{#}}" onClick={close}>R&eacute;sum&eacute;</a> */}
+        <a href="#email_contact" onClick={close}>Contact</a>
     </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="{{#}}" classname="closebtn" onClick={close}>&times;</a>
-        <img class="profile-img" src={require('../assets/images/profile_image.jpeg')} alt="profile"/>
+    <div id="mySidenav" className="sidenav">
+        <a href="{{#}}" className="closebtn" onClick={close}>&times;</a>
+        <img className="profile-img" src={require('../assets/images/profile_image.jpeg')} alt="profile"/>
         <a href="#abt" onClick={close}>About</a>
-        <a href="#work" onClick={close}>Work</a>
-        <a href="{{#}}" onClick={close}>R&eacute;sum&eacute;</a>
-        <a href="{{#}}" onClick={close}>Email</a>
+        <a href="#work" onClick={close}>MyWork</a>
+        {/* <a href="{{#}}" onClick={close}>R&eacute;sum&eacute;</a> */}
+        <a href="#email_contact" onClick={close}>Contact</a>
     </div>
 
 {/* <h2>Animated Sidenav Example</h2>

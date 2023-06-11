@@ -1,10 +1,7 @@
 # TODO:
  
- 1. Add other sections
- 2. Add LinkedIn, Github link
- 3. Create email function on Azure
- 4. Link to Email
- 5. Push live on Azure
+ 1. Fix email CSS
+ 5. Push live to S3
  6. Udemy course / try transitions on site
  7. Rework css after course
  8. Create CoderRank widgets and add
