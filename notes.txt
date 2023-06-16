@@ -1,12 +1,16 @@
 # TODO:
  
- 1. Fix email CSS
- 5. Push live to S3
- 6. Udemy course / try transitions on site
- 7. Rework css after course
- 8. Create CoderRank widgets and add
- 9. Take P5.js course 
+ 5. set up url access to bucket
+ 6. Set up github action to auto deploy to bucket
+ 7. Udemy course / try transitions on site
+ 8. Rework css after course
+ 9. Create CoderRank widgets and add
+ 10. Take P5.js course 
 
  GOAL: Use CSS to show guy opening coat on both 
     sides to see skills i.e. CSS, HTML, Python, etc.
+
+npm install -g serve
+
+serve -s build
 
