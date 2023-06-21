@@ -29,3 +29,41 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: Upload build folder
+      uses: actions/upload-artifact@v3
+      with:
+        name: npm-build-artifact
+        path: /build
+  
+  authenticate:
+    # Allow the job to fetch a GitHub ID token
+    permissions:
+      id-token: write
+      contents: read
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          create_credentials_file: true
+          workload_identity_provider: 'projects/325403088135/locations/global/workloadIdentityPools/github-action-pool/providers/github-action-provider'
+          service_account: 'github-action-mrflesher@mrflesher.iam.gserviceaccount.com'
+          
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build folder
+        uses: actions/download-artifact@v3
+        with:
+          name: npm-build-artifact
+      - name: Upload to GCP Bucket
+        uses: 'google-github-actions/upload-cloud-storage@v1'
+        with:
+          path: '/build'
+          destination: 'mrflesher'
+  
