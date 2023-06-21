@@ -1,3 +1,5 @@
+on: push
+
 jobs:
   build:
     # Allow the job to fetch a GitHub ID token
