@@ -40,8 +40,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+    steps:     
+      - name: Download build folder
+        uses: actions/download-artifact@v3
+        with:
+          name: npm-build-artifact
 
       - id: 'auth'
         name: 'Authenticate to Google Cloud'
@@ -50,12 +53,9 @@ jobs:
           create_credentials_file: true
           workload_identity_provider: 'projects/325403088135/locations/global/workloadIdentityPools/github-action-pool/providers/github-action-provider'
           service_account: 'github-action-mrflesher@mrflesher.iam.gserviceaccount.com'
+          
+      - run: ls -la
       
-      - name: Download build folder
-        uses: actions/download-artifact@v3
-        with:
-          name: npm-build-artifact
- 
       - name: Upload to GCP Bucket
         uses: 'google-github-actions/upload-cloud-storage@v1'
         with:
