@@ -63,5 +63,5 @@ jobs:
         uses: 'google-github-actions/upload-cloud-storage@v1'
         with:
           path: './build'
-          destination: 'mrflesher'
+          destination: 'mrflesher/build'
   
