@@ -34,6 +34,7 @@ jobs:
       with:
         name: npm-build-artifact
         path: ./build
+    - run: ls -la
   
   authenticate:
     # Allow the job to fetch a GitHub ID token
