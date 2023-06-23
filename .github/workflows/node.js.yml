@@ -53,7 +53,7 @@ jobs:
           token_format: 'access_token'
           create_credentials_file: true
           workload_identity_provider: '${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}'
-          service_account: 'secrets.SERVICE_ACCOUNT'
+          service_account: '${{secrets.SERVICE_ACCOUNT}}'
           
       - run: ls -la
       
