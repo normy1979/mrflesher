@@ -12,7 +12,7 @@ export default function Home() {
         {/* <img id="ease" className="overlay move" src={require('../assets/images/honu.png')} alt="honu"/> */}
         <Navbar/>
         <div className="bg-div">
-            <h3 className="bg-text">Hi, I'm Matt.</h3>
+            <h3 className="bg-text">Hi, I'm Matthew.</h3>
             <p className="bg-text">I'm a software engineer for the Federal Aviation Administration in Atlantic City, NJ.  I specialize in test automation by day and web application development by night.  I enjoy learning, improving my skills, and figuring things out.</p>
         </div>
     </div>
