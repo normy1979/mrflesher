@@ -6,16 +6,14 @@ export default function Email() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        // console.log(e.target.name.value)
-        // console.log(e.target.email.value)
-        // console.log(e.target.message.value)
+
         fetch('https://o3u76sz857.execute-api.us-east-1.amazonaws.com/prod/emailForwarder', {
          method: 'POST',
          body: JSON.stringify({
             name: e.target.name.value,
-            phone: '',
             email: e.target.email.value,
-            message: e.target.message.value
+            message: e.target.message.value,
+            phone: ''
          }),
          headers: {
             'Content-type': 'application/json; charset=UTF-8',
@@ -29,7 +27,10 @@ export default function Email() {
          .catch((err) => {
             console.log(err.message);
          });
+        alert("Thanks for reaching out! I'll get back to you shortly");
         console.log("email sent")
+        document.getElementById("emailForm").reset();
+        window.location.href = "#";
     };
 
     return (
@@ -37,7 +38,7 @@ export default function Email() {
 
         <div className="container" id="email_contact">
          <div className="inner-container">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} id="emailForm">
             <div className="row">
                <div className="col-25">
                   <label htmlFor="name">Name</label>
