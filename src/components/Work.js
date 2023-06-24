@@ -13,7 +13,7 @@ export default function Work() {
                 <a href="https://thekraziestkatlady.com">thekraziestkatlady.com</a>
                 <p>A NJ Non-profit Cat Rescue </p>
                 <p>***</p>
-                <p>Angular | AWS - S3, Lambda, DynamoDB, IAM | NodeJS | HTML | CSS | JavaScript | Gitlab - Issue tracking, Git Version Control, CI/CD</p>
+                <p>Angular | AWS - S3, Lambda, DynamoDB, IAM | NodeJS | Karma | Jasmine | HTML | CSS | JavaScript | Gitlab - Issue tracking, Git Version Control, CI/CD</p>
             </em></h5>
         </div>
         <br/>
@@ -24,7 +24,7 @@ export default function Work() {
                 <a href="https://mrflesher.com">mrflesher.com</a> 
                 <p>(this site)</p>
                 <p>***</p>
-                <p>ReactJS | Google Cloud Platform (GCP) - Bucket Storage, IAM | AWS - Lambda, IAM | NodeJS | HTML | CSS | GitHub - Issue tracking, Git Version Control, Github Actions</p>
+                <p>ReactJS | Google Cloud Platform (GCP) - Bucket Storage, IAM | AWS - Lambda, IAM | NodeJS | Jest | HTML | CSS | GitHub - Issue tracking, Git Version Control, Github Actions</p>
             </em></h5>
         </div>      
         <br/>     
