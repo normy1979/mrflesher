@@ -16,7 +16,8 @@
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-top: 10%;
   }
 
   .bg-text {
@@ -45,4 +46,16 @@
     height: 1000px; 
     background-color:rgba(228, 235, 238, 0.968);
     font-size: 26px;
+  }
+
+  @media(max-width: 600px){
+    .parallax {
+      /* The image used small screen */
+      background-image: url("../images/honu_dalle.png");
+    }
+    .bg-text {
+      color:rgb(1, 2, 15);
+      font-weight: bold;
+      background-color: unset;
+    }
   }
