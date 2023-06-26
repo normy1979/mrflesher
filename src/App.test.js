@@ -9,6 +9,6 @@ test('renders intro element', () => {
 
 test('renders about', () => {
   render(<App />);
-  const introElement = screen.getByText(/since i was a kid/i);
+  const introElement = screen.getByText(/I've been interested in technology/i);
   expect(introElement).toBeInTheDocument();
 });

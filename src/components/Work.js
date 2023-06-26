@@ -1,4 +1,5 @@
 import '../assets/css/work.css'
+import Link from './html-utils/link/Link'
 
 export default function Work() {
     return ( 
@@ -7,10 +8,9 @@ export default function Work() {
         <h3>MY WORK</h3>
         <br/>
         <div>
-            <a href="https://thekraziestkatlady.com"><img className="work-img" src={require('../assets/images/kkl_logo.png')} alt="kkl"/>
-            </a>
+            <Link page="https://thekraziestkatlady.com"><img className="work-img" src={require('../assets/images/kkl_logo.png')} alt="kkl"/></Link>
             <h5><em>
-                <a href="https://thekraziestkatlady.com">thekraziestkatlady.com</a>
+                <Link page="https://thekraziestkatlady.com">thekraziestkatlady</Link>
                 <p>A NJ Non-profit Cat Rescue </p>
                 <p>***</p>
                 <p>Angular | AWS - S3, Lambda, DynamoDB, IAM | NodeJS | Karma | Jasmine | HTML | CSS | JavaScript | Gitlab - Issue tracking, Git Version Control, CI/CD</p>
@@ -29,9 +29,9 @@ export default function Work() {
         </div>      
         <br/>     
         <div>
-            <a href="http://actunaclub.com"><img className="work-img" src={require('../assets/images/tc_logo.png')} alt="tuna club"/></a>
+            <Link page="http://actunaclub.com"><img className="work-img" src={require('../assets/images/tc_logo.png')} alt="tuna club"/></Link>
             <h5><em>
-                <a href="http://actunaclub.com">actunaclub.com</a>
+                <Link page="http://actunaclub.com">actunaclub.com</Link>
                 <p>(An informational site about the history of the property we live on)</p>
                 <p>***</p>
                 <p>Angular | AWS - S3 | HTML | CSS | JavaScript | Gitlab - Issue tracking, Git Version Control, CI/CD</p>
