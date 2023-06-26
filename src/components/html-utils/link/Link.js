@@ -21,6 +21,7 @@ export default function Link({page, children}) {
       className={status}
       href={page || '#'}
       target="_blank"
+      rel="noreferrer"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
