@@ -9,10 +9,11 @@ export default function Navbar() {
     <>
     <div id="myTopnav" className="navbar" onScroll={showtopnav}>
         <button className="nav-btn" onClick={open}>&#9776;</button>
+        
         <a href="#abt" onClick={close}>About</a>
         <a href="#work" onClick={close}>MyWork</a>
-        {/* <a href="{{#}}" onClick={close}>R&eacute;sum&eacute;</a> */}
         <a href="#email_contact" onClick={close}>Contact</a>
+        
     </div>
     <div id="mySidenav" className="sidenav">
         <a href="{{#}}" className="closebtn" onClick={close}>&times;</a>
