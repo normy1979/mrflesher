@@ -25,9 +25,9 @@ export default function Home() {
     <br></br>
     <Work/>
     <br></br>
-    <Email/>
-    <br></br>
     <Footer/>
+    <br></br>
+    <Email/>
     
     </>
     );

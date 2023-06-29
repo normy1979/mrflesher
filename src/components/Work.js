@@ -46,7 +46,6 @@ export default function Work() {
             <p><Link page="https://profile.codersrank.io/user/normy1979/">CodersRank</Link></p>
         </div>
         <br/>
-        <br/>
     </div>
     </>
     );
