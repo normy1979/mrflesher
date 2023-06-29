@@ -2,6 +2,7 @@ import '../assets/css/work.css'
 import Link from './html-utils/link/Link'
 
 export default function Work() {
+
     return ( 
     <>
     <div className="work-div" id="work">
@@ -37,6 +38,15 @@ export default function Work() {
                 <p>Angular | AWS - S3 | HTML | CSS | JavaScript | Gitlab - Issue tracking, Git Version Control, CI/CD</p>
             </em></h5>
         </div>
+        <br/>
+        <br/>
+        <div>
+            <h3>Other</h3>
+            <p><Link page="https://www.cloudskillsboost.google/public_profiles/335adb2a-f6be-4cb8-9046-d8002cdd8952">Google Cloudskills</Link></p>
+            <p><Link page="https://profile.codersrank.io/user/normy1979/">CodersRank</Link></p>
+        </div>
+        <br/>
+        <br/>
     </div>
     </>
     );

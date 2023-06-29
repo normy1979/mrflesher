@@ -33,6 +33,11 @@
     transition-property: translate();
     transition-duration: 3s;
   }
+
+  .dalle {
+    text-align: center;
+    font-size: 12px;
+  }
   
   #ease {	
     transition-timing-function: ease;	
